@@ -54,7 +54,6 @@ function play(pressedKey)
 {
 	if(letters.indexOf(pressedKey) !== -1)
 	{
-		report(pressedKey);
 		if(pressedKey === iThink)
 		{
 			alert("You win!");
