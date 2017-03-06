@@ -1,0 +1,1 @@
+Psychic game. Chooses a random number and gives player a certain number of guesses. Tracks wins and losses. 

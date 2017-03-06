@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<title>Psychic Game</title>
+</head>
+<body>
+
+	<div>
+		<h1>Prove your psychic power!</h1>
+		<h2>Guess what number I'm thinking of. Use the keyboard to enter your selection. You will have 10 guesses.</h2>
+	</div>
+	<div id="playArea">
+		<div class="scoreArea">
+			<div id="winText">Wins: </div><div id="wins"></div>
+			<div id="lossText"></div><div id="losses"></div>
+		</div>
+		<div class="playerTrack">
+			<div class="segment"><div id="remText"></div><div id="remaining"></div></div>
+			<div class="segment"><div id="guessText"></div><div id="guesses"></div></div>
+		</div>
+	</div>
+
+	<div><button onclick="hardReset()">Reset</button></div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
