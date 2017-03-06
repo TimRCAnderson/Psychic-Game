@@ -13,13 +13,6 @@ var iThink = "";
 var guesses = [];
 var letters = "abcdefghijklmnopqrstuvwxyz".split("");
 
-function report(logMe)
-{
-	console.log(logMe);
-}
-
-report(letters);
-
 function init()
 {
 	winTextDiv.innerHTML = "Wins: ";
@@ -32,8 +25,6 @@ function init()
 	remDiv.innerHTML = remGuess;
 	iThink = letters[Math.floor(Math.random() * letters.length)]
 }
-
-init();
 
 function softReset()
 {
@@ -89,9 +80,10 @@ function play(pressedKey)
 
 }
 
+init();
+
 document.onkeyup = function(event)
 {
 	var userKey = event.key.toLowerCase();
-	report(userKey);
 	play(userKey);
 }
